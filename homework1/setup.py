@@ -9,4 +9,3 @@ setup(
     description="First Day",
     license="RD DevOps Lab"
 )
-
