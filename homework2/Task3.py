@@ -13,8 +13,8 @@ while True:
 area = []
 for i in range(n):
     while True:
-        xy = \
-            list(map(int, input("Введите коорд {}-го: ".format(i + 1)).split()))
+        xy = list(map(int, \
+            input("Введите коорд {}-го: ".format(i + 1)).split()))
         if 0 <= xy[0] <= xy[2] <= w and 0 <= xy[1] <= xy[3] <= h:
             break
         else:
