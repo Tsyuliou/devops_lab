@@ -13,4 +13,3 @@ EOF
 
 cd $HOME
 source .bashrc
-

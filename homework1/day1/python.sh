@@ -23,22 +23,3 @@ if [[ $ch1 ]]
     pyenv global 3.7.2
     pyenv virtualenv p3    
 fi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
