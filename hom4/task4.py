@@ -1,5 +1,4 @@
 import requests
-import os.path
 import configparser
 
 config = configparser.ConfigParser()
@@ -27,5 +26,5 @@ class rep:
 
 
 if __name__ == '__main__':
-   task4 = rep()
-   task4.rep_info(username, password)
+    task4 = rep()
+    task4.rep_info(username, password)
