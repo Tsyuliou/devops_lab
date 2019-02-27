@@ -35,11 +35,11 @@ class def_setings():
 class f_checker():
     def check(self):
         if os.path.exists("output.txt") == 0:
-            with open("output.txt", "w") as file:
+            with open("output.txt", "w"):
                 pass
 
         if os.path.exists("output.json") == 0:
-            with open("output.json", "w") as file:
+            with open("output.json", "w"):
                 pass
 
 
@@ -67,5 +67,5 @@ while True:
         with open("output.json", "a") as file:
             json.dumps("SNAPSHOT {} :{}:".format(i, Time, file, indent=4))
             json.dumps("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net, file, indent=4))
-    
+
     time.sleep(int(time_int) * 60)
