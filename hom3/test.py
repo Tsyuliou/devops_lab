@@ -65,7 +65,7 @@ while True:
             out.write("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net))
     elif type_of_file == "json":
         with open("output.json", "a") as out:
-            json.dumps("SNAPSHOT {} :{}:".format(i, Time, file, indent=4))
-            json.dumps("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net, file, indent=4))
+            json.dumps("SNAPSHOT {} :{}:".format(i, Time, out, indent=4))
+            json.dumps("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net, out, indent=4))
 
     time.sleep(int(time_int) * 60)
