@@ -1,5 +1,5 @@
 def print_formatted(number):
-    if number >= 1 and number <= 99:
+    if 1 <= number <= 99:
         width = len("{0:b}".format(number))
         for i in range(number):
             i += 1
