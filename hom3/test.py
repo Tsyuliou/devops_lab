@@ -9,13 +9,13 @@ time_int = None
 i = 0
 
 
-class def_setings():
+class Def_setings():
     def defenition(self):
         global type_of_file, time_int
-        with open('config.txt', 'r') as file:
-            for line in file:
-                type_f = file.readline()
-                time_interval = file.readline()
+        with open('config.txt', 'r') as out:
+            for line in out:
+                type_f = out.readline()
+                time_interval = out.readline()
 
         for i in type_f:
             if not i.isalpha() and i != ' ':
@@ -32,7 +32,7 @@ class def_setings():
 
 
 # set class-checker
-class f_checker():
+class F_checker():
     def check(self):
         if os.path.exists("output.txt") == 0:
             with open("output.txt", "w"):
@@ -44,8 +44,8 @@ class f_checker():
 
 
 if __name__ == '__main__':
-    ch = f_checker()
-    read = def_setings()
+    ch = F_checker()
+    read = Def_setings()
     ch.check()
     read.defenition()
 
@@ -60,11 +60,11 @@ while True:
     net = psutil.net_if_stats()
     i += 1
     if type_of_file == "txt":
-        with open("output.txt", "a") as file:
-            file.write("SNAPSHOT {} :{}:".format(i, Time))
-            file.write("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net))
+        with open("output.txt", "a") as out:
+            out.write("SNAPSHOT {} :{}:".format(i, Time))
+            out.write("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net))
     elif type_of_file == "json":
-        with open("output.json", "a") as file:
+        with open("output.json", "a") as out:
             json.dumps("SNAPSHOT {} :{}:".format(i, Time, file, indent=4))
             json.dumps("\n{},\n{},\n{},\n{},\n{}\n".format(cpu, mem, vmem, io, net, file, indent=4))
 
