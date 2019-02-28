@@ -1,9 +1,0 @@
-apache_vhosts:
-- servername: www.domain.tld
-  documentroot: /www/domain
-  serveradmin: www-admin@foo.example.com
-  dirpath: /usr/local/httpd/htdocs
-- servername: www.domain1.tld
-  documentroot: /www/domain1
-  serveradmin: www-admin@for.fun.com
-  dirpath: /usr/bin/bash
