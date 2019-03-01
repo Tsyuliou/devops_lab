@@ -1,7 +1,6 @@
 [private]
 username = tsyuliou
-password = iMMortaL1488
 
 [data]
 link1 = https://api.github.com/user
-link2 = https://api.github.com/events
+link2 = https://github.com/alenaPy/devops_lab/pull/113
